@@ -22,8 +22,8 @@ public class FindOnlyOneMissingDigitNoDuplicatesTest {
         final int maxDigitInSequence = 0;
         final Set<Integer> digits = new TreeSet<>();
 
-        MissingDigitFinder missingDigitFinder = new MissingDigitFinder();
-        int result = missingDigitFinder.findMissingDigit(digits, maxDigitInSequence);
+        MissingDigitsFinder missingDigitsFinder = new MissingDigitsFinder();
+        int result = missingDigitsFinder.findMissingDigit(digits, maxDigitInSequence);
 
         assertThat(result, is(0));
     }
@@ -35,8 +35,8 @@ public class FindOnlyOneMissingDigitNoDuplicatesTest {
         final int maxDigitInSequence = 1;
         final Set<Integer> digits = Sets.newTreeSet(Arrays.asList(1, 2));
 
-        MissingDigitFinder missingDigitFinder = new MissingDigitFinder();
-        missingDigitFinder.findMissingDigit(digits, maxDigitInSequence);
+        MissingDigitsFinder missingDigitsFinder = new MissingDigitsFinder();
+        missingDigitsFinder.findMissingDigit(digits, maxDigitInSequence);
     }
 
     @Test
@@ -44,8 +44,8 @@ public class FindOnlyOneMissingDigitNoDuplicatesTest {
         final int maxDigitInSequence = 3;
         final Set<Integer> digits = Sets.newTreeSet(Arrays.asList(1, 3));
 
-        MissingDigitFinder missingDigitFinder = new MissingDigitFinder();
-        int result = missingDigitFinder.findMissingDigit(digits, maxDigitInSequence);
+        MissingDigitsFinder missingDigitsFinder = new MissingDigitsFinder();
+        int result = missingDigitsFinder.findMissingDigit(digits, maxDigitInSequence);
 
         assertThat(result, is(2));
     }
