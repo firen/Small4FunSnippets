@@ -13,12 +13,12 @@ import static org.junit.Assert.assertThat;
 /**
  * Created by firen on 2014-11-29.
  */
-public class FindOnlyOneMissingDigitNoDuplicates {
+public class FindOnlyOneMissingDigitNoDuplicatesTest {
     @Rule
     public ExpectedException expectedException = ExpectedException.none();
 
     @Test
-    public void shouldReturnZeroForEmptyZero() {
+    public void shouldReturnZeroForEmptyArrayAndZero() {
         final int maxDigitInSequence = 0;
         final Set<Integer> digits = new TreeSet<>();
 
